@@ -8,7 +8,12 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-// ...
+
+const links = [
+  { name: "Home", href: "/", icon: HomeIcon },
+  { name: "Documents", href: "/documents", icon: DocumentDuplicateIcon },
+  { name: "Users", href: "/users", icon: UserGroupIcon },
+];
 
 export default function NavLinks() {
   const pathname = usePathname();
